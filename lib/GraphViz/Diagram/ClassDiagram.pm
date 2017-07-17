@@ -61,7 +61,7 @@ Start drawing a class diagram.
 
   my $self           = GraphViz::Graph->new($file_base_name);
   $self -> {suffix } = $suffix;
-  $self -> {nodes_} = [];
+  $self -> {nodes_ } = [];
   $self -> {links  } = [];
 
   bless $self, $class;
@@ -87,7 +87,7 @@ Start drawing a class diagram.
 } #_}
 sub class { #_{
 
-=head2 title
+=head2 class
 
     my $CFoo = $class_diagram -> class("CFoo");
 
@@ -100,7 +100,7 @@ Add a L<GraphViz::Diagram::ClassDiagram::Class> to the class diagram
 
   my $class      = GraphViz::Diagram::ClassDiagram::Class->new($class_name, $self);
 
-  push @{$self->{nodes_}}, $class;
+  push @{$self->{nodes_ }}, $class;
 
   return $class;
 
@@ -121,7 +121,7 @@ Add a L<GraphViz::Diagram::ClassDiagram::GlobalVar> to the class diagram.j
 
   my $global_var      = GraphViz::Diagram::ClassDiagram::GlobalVar->new($global_var_name, $self);
 
-  push @{$self->{nodes_}}, $global_var;
+  push @{$self->{nodes_ }}, $global_var;
 
   return $global_var;
 
@@ -193,7 +193,7 @@ back
 #_}
   my $self    = shift;
 
-  for my $class (@{$self->{nodes_}}) {
+  for my $class (@{$self->{nodes_ }}) {
     $class->render();
   }
   for my $link_description (@{$self->{links}}) {
@@ -225,6 +225,11 @@ Compare with L<GraphViz::Diagram::ClassDiagram::Attribute/ident_color>
   return '#22c050';
 
 } #_}
+
+#_}
+#_{ Source Code
+
+The source code is on L<github|https://github.com/ReneNyffenegger/perl-GraphViz-Diagram-ClassDiagram>.
 
 #_}
 
