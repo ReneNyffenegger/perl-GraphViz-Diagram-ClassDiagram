@@ -5,7 +5,7 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME             => 'GraphViz::Diagram::Class',
+    NAME             => 'GraphViz::Diagram::ClassDiagram',
     AUTHOR           => q{René Nyffenegger <rene.nyffenegger@adp-gmbh.ch>},
     VERSION_FROM     => 'lib/GraphViz/Diagram/ClassDiagram.pm',
     ABSTRACT_FROM    => 'lib/GraphViz/Diagram/ClassDiagram.pm',
@@ -16,7 +16,7 @@ WriteMakefile(
         'ExtUtils::MakeMaker' => 0,
     },
     PREREQ_PM => {
-        'GraphViz::Graph' => 0.02,
+        'GraphViz::Graph' => 0.03,
     },
     BUILD_REQUIRES => {
         'Test::Simple' => 0,
