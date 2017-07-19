@@ -4,3 +4,5 @@ MYMETA.yml
 Makefile
 blib
 pm_to_blib
+MANIFEST.bak
+GraphViz-Diagram-ClassDiagram-*.tar.gz
