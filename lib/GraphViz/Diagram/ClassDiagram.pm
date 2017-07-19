@@ -230,9 +230,11 @@ Compare with L<GraphViz::Diagram::ClassDiagram::Attribute/ident_color>
 
 #_}
 #_{ Source Code
+=head1 Source code
 
 The source code is on L<github|https://github.com/ReneNyffenegger/perl-GraphViz-Diagram-ClassDiagram>.
 
+=cut
 #_}
 
 'tq84';
