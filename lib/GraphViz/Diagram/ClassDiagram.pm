@@ -57,6 +57,7 @@ Start drawing a class diagram.
   my $output_file    = shift;
   my $opts           = shift // {};
 
+  # TODO: same functionality already used in GraphViz::Diagram::GitRepository
   my ($file_base_name, $suffix) = $output_file =~ m!(.*)\.([^.]+)$!;
 
   my $self           = GraphViz::Graph->new($file_base_name);
@@ -77,6 +78,8 @@ sub title { #_{
 Start drawing a class diagram.
 
 =cut
+
+  # TODO: same functionality already used in GraphViz::Diagram::GitRepository
 
   my $self   = shift;
   my $title  = shift;
