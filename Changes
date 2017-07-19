@@ -2,3 +2,10 @@
  0.01  2017-07-16
 
        Start on initial version.
+
+ 0.02  2017-07-19
+
+       Fix problems in POD:
+           - title
+           - forgotten back in method GraphViz::Diagram::ClassDiagram::create
+           - typos

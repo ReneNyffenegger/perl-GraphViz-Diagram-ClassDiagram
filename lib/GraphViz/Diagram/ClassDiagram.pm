@@ -16,11 +16,11 @@ use utf8;
 #_{ Version
 =head1 VERSION
 
-Version 0.01
+Version 0.02
 
 =cut
 
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 our @ISA = qw(GraphViz::Graph);
 #_}
 #_{ Synopsis
@@ -74,7 +74,9 @@ sub title { #_{
 
     $class_diagram -> title("Foo classes");
 
-Start drawing a class diagram.
+Sets the title for the class diagram.
+
+I'll probably move this method up in the class hierarchy, once.
 
 =cut
 
@@ -113,7 +115,7 @@ sub global_var { #_{
 
     my $g_foo = $classes -> global_var('foo');
 
-Add a L<GraphViz::Diagram::ClassDiagram::GlobalVar> to the class diagram.j
+Add a L<GraphViz::Diagram::ClassDiagram::GlobalVar> to the class diagram.
 
 =cut
 #_}
@@ -135,7 +137,8 @@ sub link { #_{
     $class_diagram->link($class_one     , $attribute_three);
     $class_diagram->link($attribute_four, $class_five);
 
-Connect classes, attributes and methodes one to another.
+Connect L<classes|GraphViz::Diagram::ClassDiagram::Class>, L<attributes|GraphViz::Diagram::ClassDiagram::Attribute> and
+L<methods|GraphViz::Diagram::ClassDiagram::Method> one to another.
 
 =cut
 
@@ -159,7 +162,7 @@ sub inheritance { #_{
      # …
      $class_diagram->inheritance($class_base, $class_derv);
 
-It's probably better to use L<< $class_derv->inherits_from($clas_base) >>.
+It's probably better to use L<< $class_derv->inherits_from($clas_base)|GraphViz::Diagram::ClassDiagram::Class/inherits_from >>.
 
 
 =cut
@@ -179,6 +182,7 @@ It's probably better to use L<< $class_derv->inherits_from($clas_base) >>.
 sub create { #_{
 #_{
 =head2 create
+
     $class_diagram -> create();
 
 Writes the class diagram:
@@ -189,7 +193,7 @@ Writes the class diagram:
 
 =item * Draw L<edges|GraphViz::Graph::Edge> between classes
 
-back
+=back
 
 =cut
 #_}
