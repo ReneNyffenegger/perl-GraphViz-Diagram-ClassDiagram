@@ -6,7 +6,6 @@ use strict;
 use Carp;
 use GraphViz::Diagram::ClassDiagram;
 #_}
-use lib '/home/rene/github/lib/perl-GraphViz-Graph/lib/'; # Temporary...
 use GraphViz::Diagram::ClassDiagram;
 use GraphViz::Diagram::ClassDiagram::Method;
 use GraphViz::Diagram::ClassDiagram::Node_;

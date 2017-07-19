@@ -4,7 +4,6 @@ use warnings;
 use strict;
 use Carp;
 #_}
-# use lib '/home/rene/github/lib/perl-GraphViz-Graph/lib/'; # Temporary...
 use GraphViz::Diagram::ClassDiagram::Node_;
 
 our $VERSION = $GraphViz::Diagram::ClassDiagram::VERSION;

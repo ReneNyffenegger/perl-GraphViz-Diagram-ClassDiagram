@@ -32,7 +32,6 @@ our @ISA = qw(GraphViz::Graph);
 #_}
 #_{ use …
 use Carp;
-use lib '/home/rene/github/lib/perl-GraphViz-Graph/lib/'; # Temporary...
 use GraphViz::Diagram::ClassDiagram::Class;
 use GraphViz::Diagram::ClassDiagram::GlobalVar;
 use GraphViz::Graph;
