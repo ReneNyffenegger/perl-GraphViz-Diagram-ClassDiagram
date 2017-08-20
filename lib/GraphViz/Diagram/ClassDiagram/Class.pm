@@ -5,11 +5,11 @@ use strict;
 
 use Carp;
 use GraphViz::Diagram::ClassDiagram;
-#_}
 use GraphViz::Diagram::ClassDiagram;
 use GraphViz::Diagram::ClassDiagram::Method;
 use GraphViz::Diagram::ClassDiagram::Node_;
 use GraphViz::Diagram::ClassDiagram::Attribute;
+#_}
 
 our $VERSION = $GraphViz::Diagram::ClassDiagram::VERSION;
 our @ISA = qw(GraphViz::Diagram::ClassDiagram::Node_);
@@ -28,7 +28,8 @@ C<GraphViz::Diagram::ClassDiagram::Class>: A class that represents classes.
 
 =cut
 #_}
-#_{ POD: Methods
+#_{ Methods
+#_{ POD
 =head1 METHODS
 
 =cut
@@ -240,6 +241,6 @@ A private static method. Returns the necessary C<colspan='n'> for C<< <td> >>'s 
   return "colspan='2'";
 
 } #_}
-
+#_}
 
 'tq84';

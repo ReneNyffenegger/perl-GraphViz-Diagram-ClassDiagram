@@ -6,11 +6,11 @@ use strict;
 use Carp;
 use GraphViz::Diagram::ClassDiagram;
 use GraphViz::Graph::Node;
+#_}
 
 our @ISA=qw(GraphViz::Graph::Node);
 our $VERSION=$GraphViz::Diagram::ClassDiagram::VERSION;
-
-#_{ POD
+#_{ POD Name
 =encoding utf8
 =head1 NAME
 
@@ -18,6 +18,8 @@ GraphViz::Diagram::ClassDiagram::Node_ is a base class for all class diagram obj
 such as L<GraphViz::Graph::GlobalVar> or L<GraphViz::Graph::Class>.
 
 =cut
+#_}
+#_{ POD Usage
 =head1 USAGE
 
 This class should not be used by a user of C<GraphViz::Diagram::ClassDiagram>.
@@ -28,8 +30,15 @@ L<GraphViz::Diagram::ClassDiagram::Class> and L<GraphViz::Diagram::ClassDiagram:
 =cut
 
 #_}
+#_{ Methods
+#_{ POD
 
-sub new {
+=head1 METHOS
+
+=cut
+
+#_}
+sub new { #_{
 
 #_{ POD
 =head2 new
@@ -56,6 +65,6 @@ Creates a C<GraphViz::Diagram::ClassDiagram::Node_>.
 
   return $self;
 
-}
-
+} #_}
+#_}
 'tq84'

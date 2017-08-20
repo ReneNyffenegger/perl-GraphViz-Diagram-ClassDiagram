@@ -95,7 +95,7 @@ sub class { #_{
 
     my $CFoo = $class_diagram -> class("CFoo");
 
-Add a L<GraphViz::Diagram::ClassDiagram::Class> to the class diagram
+Add a L<GraphViz::Diagram::ClassDiagram::Class> to the class diagram and return it.
 
 =cut
 
@@ -115,7 +115,7 @@ sub global_var { #_{
 
     my $g_foo = $classes -> global_var('foo');
 
-Add a L<GraphViz::Diagram::ClassDiagram::GlobalVar> to the class diagram.
+Add a L<GraphViz::Diagram::ClassDiagram::GlobalVar> to the class diagram and return it.
 
 =cut
 #_}
@@ -137,7 +137,7 @@ sub link { #_{
     $class_diagram->link($class_one     , $attribute_three);
     $class_diagram->link($attribute_four, $class_five);
 
-Connect L<classes|GraphViz::Diagram::ClassDiagram::Class>, L<attributes|GraphViz::Diagram::ClassDiagram::Attribute> and
+Connect previously added L<classes|GraphViz::Diagram::ClassDiagram::Class>, L<attributes|GraphViz::Diagram::ClassDiagram::Attribute> and
 L<methods|GraphViz::Diagram::ClassDiagram::Method> one to another.
 
 =cut

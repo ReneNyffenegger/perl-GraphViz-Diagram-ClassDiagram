@@ -3,12 +3,25 @@ package GraphViz::Diagram::ClassDiagram::GlobalVar;
 use warnings;
 use strict;
 use Carp;
-#_}
 use GraphViz::Diagram::ClassDiagram::Node_;
 
+#_}
 our $VERSION = $GraphViz::Diagram::ClassDiagram::VERSION;
 our @ISA = qw(GraphViz::Diagram::ClassDiagram::Node_);
-#_{ POD: Methods
+#_{ POD: Description
+
+=head1 DESCRIPTION
+
+    C<GraphViz::Diagram::ClassDiagram::GlobalVar> represents a I<global variable> in a
+    L<class diagram|GraphViz::Diagram::ClassDiagram>.
+
+    It derives from L<GraphViz::Diagram::ClassDiagram::Node_>
+
+=cut
+
+#_}
+#_{ Methods
+#_{ POD
 =head1 METHODS
 
 =cut
@@ -39,7 +52,7 @@ It's called by L<GraphViz::Diagram::ClassDiagram/global_var> instead.
 
 
 } #_}
-sub class { #{
+sub class { #_{
 #_{ POD
 =head2 class
 
@@ -66,8 +79,8 @@ Specify the class of the GlobalVar.
   my $edge = $self->{class_diagram}->edge($self, $class);
   $edge->arrow_end('none');
 
-} #}
-sub render {
+} #_}
+sub render { #_{
 #_{ POD
 =head2 render
 
@@ -83,6 +96,6 @@ by L<GraphViz::Diagram::ClassDiagram/create>.
       "<font face='Courier' color='#e73915'>$self->{name}</font>"
     }
   );
-}
-
+} #_}
+#_}
 'tq84';
