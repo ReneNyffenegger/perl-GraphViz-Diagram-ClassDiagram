@@ -1,5 +1,5 @@
 Changes
-GraphViz-Diagram-ClassDiagram-0.01.tar.gz
+doc/create.pl
 ignore.txt
 lib/GraphViz/Diagram/ClassDiagram.pm
 lib/GraphViz/Diagram/ClassDiagram/Attribute.pm
