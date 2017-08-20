@@ -7,7 +7,8 @@ use GraphViz::Diagram::ClassDiagram::ClassElement;
 our @ISA = qw(GraphViz::Diagram::ClassDiagram::ClassElement);
 
 our $VERSION = $GraphViz::Diagram::ClassDiagram::VERSION;
-#_{ POD: Methods
+#_{ Methods
+#_{ POD
 =head1 Methods
 
 =cut
@@ -53,5 +54,5 @@ Compare with L<GraphViz::Diagram::ClassDiagram/color_comment>
 #_}
   return '#3318cd';
 } #_}
-
+#_}
 'tq84';
